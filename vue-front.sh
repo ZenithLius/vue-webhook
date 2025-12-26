@@ -7,6 +7,8 @@ git reset --hard origin/main
 git clean -f
 echo "拉取新代码"
 git pull origin main
+echo "安装依赖"
+npm install
 echo "编译"
 npm run build
 echo "开始执行构件"
